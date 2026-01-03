@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SAT Analyzer",
+  "version": "1.0",
+  "description": "Analyzes SAT mock tests on bluebook.plus and categorizes EBRW mistakes.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://bluebook.plus/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png"
+  }
+}

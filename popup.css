@@ -1,0 +1,27 @@
+body {
+  width: 350px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+h2, h3 { text-align: center; }
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+canvas { margin-top: 10px; }

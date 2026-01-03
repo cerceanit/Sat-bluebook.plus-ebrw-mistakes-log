@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAT Analyzer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>SAT EBRW Mistake Analyzer</h2>
+  <p>Visit bluebook.plus dashboard or a review page, then use buttons below.</p>
+  
+  <button id="scan-dashboard">Scan Dashboard for Tests</button>
+  <button id="scan-review">Scan Current Review Page</button>
+  <button id="clear-data">Clear Stored Data</button>
+
+  <h4>Manual Category Counts (for current review page)</h4>
+<div style="display:flex; flex-direction:column; gap:8px;">
+  <input type="number" id="cat1" placeholder="Information and Ideas" min="0" style="width:100%; padding:6px;">
+  <input type="number" id="cat2" placeholder="Craft and Structure" min="0" style="width:100%; padding:6px;">
+  <input type="number" id="cat3" placeholder="Expression of Ideas" min="0" style="width:100%; padding:6px;">
+  <input type="number" id="cat4" placeholder="Standard English Conventions" min="0" style="width:100%; padding:6px;">
+  <button id="add-manual">Add These Counts</button>
+</div>
+  
+  <h3>Aggregated Mistakes</h3>
+  <table id="results-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Total Mistakes</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+  
+  <canvas id="mistakes-chart" width="300" height="200"></canvas> <!-- For bar chart -->
+  
+  <script src="popup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for charts -->
+</body>
+</html>
+
