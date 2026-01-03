@@ -1,5 +1,8 @@
 # SAT EBRW Mistake Analyzer – Chrome Extension
 
+IMPORTANT: You must download the entire repository as a folder
+Please download or clone the full project folder (containing manifest.json, popup.html, popup.js, etc.) and load that complete folder in Chrome. Do not just copy individual files — the extension needs all files in the same directory to work correctly.
+
 A personal Chrome extension that automatically analyzes your completed Digital SAT mock tests on **bluebook.plus** and categorizes all your **EBRW (Reading & Writing)** mistakes into the four official College Board domains:
 
 - **Information and Ideas**  
